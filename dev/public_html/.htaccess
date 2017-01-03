@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+     
+RewriteRule . index.php [L]
+
+#RewriteCond %{HTTP_HOST} ^0du.cc [NC]
+#RewriteRule ^(.*)$ http://0du.cc/$1 [R=301,NC,L]
+
+</IfModule>
